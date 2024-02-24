@@ -1,7 +1,11 @@
-#!/usr/bin/env bash
 # exit on error
-set -o errexit
+$ErrorActionPreference = "Stop"
 
+# Install dependencies
 bundle install
+
+# Precompile assets
 bundle exec rails assets:precompile
+
+# Clean assets
 bundle exec rails assets:clean
