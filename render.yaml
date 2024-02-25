@@ -12,8 +12,8 @@ services:
     envVars:
       - key: DATABASE_URL
         fromDatabase:
-          name: mysite
+          name: budget-app
           property: connectionString
       - key: RAILS_MASTER_KEY
         sync: false
-        : 2 # sensible default
+        

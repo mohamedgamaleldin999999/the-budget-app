@@ -1,16 +1,21 @@
 Rails.application.routes.draw do
   devise_for :users
-  # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
-  devise_scope :user do
-    get "/users/sign_out" => "devise/sessions#destroy"
-  end
-  authenticated :user do
-    root to: "groups#index", as: :authenticated_root
-  end
-
-  resources :groups, only: [:new, :create, :index] do
-    resources :deals, only: [:new, :create, :index]
+  # get 'exchanges/index'
+  # get 'exchanges/new'
+  # get 'categories/index'
+  # get 'categories/new'
+  # root 'splash_screen/index'
+    authenticated :user do
+    root "categories#index", as: :authenticated_root
   end
 
-  root to: "splash#index"
+  unauthenticated do
+    root "splash_screen#index", as: :unauthenticated_root
+  end
+   
+
+ resources :categories do
+  resources :exchanges
+end
+  get "up" => "rails/health#show", as: :rails_health_check
 end

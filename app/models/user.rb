@@ -1,11 +1,11 @@
 class User < ApplicationRecord
+  has_many :categories, foreign_key: 'author_id'
+  has_many :exchanges, foreign_key: 'author_id'
   # Include default devise modules. Others available are:
   # :confirmable, :lockable, :timeoutable, :trackable and :omniauthable
   devise :database_authenticatable, :registerable,
-         :rememberable, :validatable
+         :recoverable, :rememberable, :validatable
 
-  has_many :groups, foreign_key: 'author_id', class_name: 'Group'
-  has_many :deals, foreign_key: 'author_id', class_name: 'Deal'
-
-  validates :name, presence: true
+  validates :name, presence: true,
+                   length: { maximum: 30, too_long: '%<count>s charecters is the maximum allowed' }
 end
