@@ -197,7 +197,9 @@ If you like this project give it a star ⭐️
 - Original design idea by Gregoire Vella on Behance.
 - The design link [behance](https://www.behance.net/gregoirevella)
 
-**I would like to thank Microverse for giving us the opportunity to learn and grow as developers and also I like to thank my family, they are all my support. 🌟**
+**I would like to thank Microverse for giving us the opportunity to learn and grow as developers and also I like to thank my family, they are all my support. T would also like to thank Juan Carlos for his support🌟**
+
+
 
 
 
