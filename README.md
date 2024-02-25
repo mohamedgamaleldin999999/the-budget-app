@@ -13,6 +13,7 @@
   - [🛠 Built With](#built-with)
     - [Tech Stack](#tech-stack)
   - [🚀 Live Demo](#live-demo)
+  - [Presentation video](#presentation-video)
 - [💻 Getting Started](#getting-started)
   - [Setup](#setup)
   - [Prerequisites](#prerequisites)
@@ -70,6 +71,13 @@ The Budget App is a mobile web application where you can manage your budget: you
 ## 🚀 Live Demo <a name="live-demo"></a>
 
 - [Live Demo Link](https://budget-app-yyb5.onrender.com/)
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- Presentation Video -->
+## 🎥 Presentation Video <a name="presentation-video"></a>
+
+- [Presentation Video Link](https://youtu.be/KgvMz6qQD24)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
